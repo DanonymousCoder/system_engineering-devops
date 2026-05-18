@@ -2,6 +2,4 @@
 # This script lists all running processes (all users), including those without a TTY,
 # in a user-oriented format and shows the process hierarchy.
 # Try GNU-style long format with tree view; fall back to other common formats
-ps -eo user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,cmd --forest 2>/dev/null || \
-ps auxf 2>/dev/null || \
-ps aux
+ps auxf

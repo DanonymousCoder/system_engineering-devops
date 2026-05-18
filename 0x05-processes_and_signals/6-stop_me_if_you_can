@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-pkill -f 4-to_infinity_and_beyond
+# This script kills 4-to_infinity_and_beyond process using kill and killall
+kill "$(pgrep -f 4-to_infinity_and_beyond)" || true
+killall -9 4-to_infinity_and_beyond || true

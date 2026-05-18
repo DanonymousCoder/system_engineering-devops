@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script displays only lines containing bash
+# This script displays bash processes with PID
 # shellcheck disable=SC2009
-ps -A | grep bash
+ps aux | grep bash

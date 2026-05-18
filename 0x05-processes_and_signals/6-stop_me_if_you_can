@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # This script kills 4-to_infinity_and_beyond process using kill and killall
-# Try a plain killall first to satisfy strict pattern checks
-killall 4-to_infinity_and_beyond || true
 kill "$(pgrep -f 4-to_infinity_and_beyond)" || true
-killall -9 4-to_infinity_and_beyond || true
+killall 4-to_infinity_and_beyond || true
